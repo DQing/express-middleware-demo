@@ -6,7 +6,7 @@ var express = require('express');
 var app = express();
 
 app.use(function (req, res, next) {
-    console.log('app use2');
+    console.log('app use1');
     next();
 
 });
@@ -19,7 +19,7 @@ app.get('/', function (req, res, next) {
 });
 
 app.get('/', function (req, res) {
-    // res.send('second');
+    res.send('second');
     console.log('two');
 });
 
